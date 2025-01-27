@@ -1,8 +1,557 @@
+
+<html>
+<head>
+<title>Navigation</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    width: 250px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<nav>
+<h3>Navigation</h3>
+<ul>
+<li><a href="index.html">index.html</a></li>
+<li><strong>folder2/</strong>
+<ul>
+<li><a href="folder2/index.html">index.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_JFA.html">heat_temperature_scatter_JFA.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_NE.html">heat_temperature_scatter_NE.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_IGE.html">heat_temperature_scatter_IGE.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_LID.html">heat_temperature_scatter_LID.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_SOD.html">heat_temperature_scatter_SOD.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_SFAB.html">heat_temperature_scatter_SFAB.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_VIL.html">heat_temperature_scatter_VIL.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_NAC.html">heat_temperature_scatter_NAC.html</a></li>
+</ul>
+</li>
+<li><strong>folder3/</strong>
+<ul>
+<li><a href="folder3/heat_temperature_scatter_VIL.html">heat_temperature_scatter_VIL.html</a></li>
+</ul>
+</li>
+<li><strong>folder1/</strong>
+<ul>
+<li><a href="folder1/heat_temperature_scatter_HAS.html">heat_temperature_scatter_HAS.html</a></li>
+<li><a href="folder1/index.html">index.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_CIT.html">heat_temperature_scatter_CIT.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_HAM.html">heat_temperature_scatter_HAM.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_BRI.html">heat_temperature_scatter_BRI.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_FIT.html">heat_temperature_scatter_FIT.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_HOG.html">heat_temperature_scatter_HOG.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_ALV.html">heat_temperature_scatter_ALV.html</a></li>
+</ul>
+</li>
+<li><strong>.git/</strong>
+<ul>
+<li><strong>objects/</strong>
+<ul>
+<li><strong>50/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>68/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>3b/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>32/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>9c/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>d0/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>df/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>d1/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>c7/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>ca/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>fe/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>ec/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>27/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>pack/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>11/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>89/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>7b/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>26/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>75/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>36/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>info/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>5b/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>37/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>d4/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>d5/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>af/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>c3/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>e6/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>fa/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>40/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>14/</strong>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>info/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>logs/</strong>
+<ul>
+<li><strong>refs/</strong>
+<ul>
+<li><strong>heads/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>remotes/</strong>
+<ul>
+<li><strong>origin/</strong>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>hooks/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>refs/</strong>
+<ul>
+<li><strong>heads/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>tags/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>remotes/</strong>
+<ul>
+<li><strong>origin/</strong>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</nav>
+<main>
+
 <html>
 <head>
 <title>folder1</title>
+<style>
+  body {
+    display: flex;
+  }
+  nav {
+    width: 250px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+  }
+  main {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #0073e6;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
+<nav>
+<h3>Folder Tree</h3>
+<ul>
+<li><a href="index.html">index.html</a></li>
+<li><strong>folder2/</strong>
+<ul>
+<li><a href="folder2/index.html">index.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_JFA.html">heat_temperature_scatter_JFA.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_NE.html">heat_temperature_scatter_NE.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_IGE.html">heat_temperature_scatter_IGE.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_LID.html">heat_temperature_scatter_LID.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_SOD.html">heat_temperature_scatter_SOD.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_SFAB.html">heat_temperature_scatter_SFAB.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_VIL.html">heat_temperature_scatter_VIL.html</a></li>
+<li><a href="folder2/heat_temperature_scatter_NAC.html">heat_temperature_scatter_NAC.html</a></li>
+</ul>
+</li>
+<li><strong>folder3/</strong>
+<ul>
+<li><a href="folder3/heat_temperature_scatter_VIL.html">heat_temperature_scatter_VIL.html</a></li>
+</ul>
+</li>
+<li><a href="README.md">README.md</a></li>
+<li><strong>folder1/</strong>
+<ul>
+<li><a href="folder1/heat_temperature_scatter_HAS.html">heat_temperature_scatter_HAS.html</a></li>
+<li><a href="folder1/index.html">index.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_CIT.html">heat_temperature_scatter_CIT.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_HAM.html">heat_temperature_scatter_HAM.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_BRI.html">heat_temperature_scatter_BRI.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_FIT.html">heat_temperature_scatter_FIT.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_HOG.html">heat_temperature_scatter_HOG.html</a></li>
+<li><a href="folder1/heat_temperature_scatter_ALV.html">heat_temperature_scatter_ALV.html</a></li>
+</ul>
+</li>
+<li><strong>.git/</strong>
+<ul>
+<li><a href=".git/config">config</a></li>
+<li><strong>objects/</strong>
+<ul>
+<li><strong>50/</strong>
+<ul>
+<li><a href=".git/objects/50/7078ec448fd8cd0dd64d40b3113e74b9d52010">7078ec448fd8cd0dd64d40b3113e74b9d52010</a></li>
+</ul>
+</li>
+<li><strong>68/</strong>
+<ul>
+<li><a href=".git/objects/68/913ec971cf5cbdc14a3017e700d4755dfe730e">913ec971cf5cbdc14a3017e700d4755dfe730e</a></li>
+</ul>
+</li>
+<li><strong>3b/</strong>
+<ul>
+<li><a href=".git/objects/3b/18e512dba79e4c8300dd08aeb37f8e728b8dad">18e512dba79e4c8300dd08aeb37f8e728b8dad</a></li>
+</ul>
+</li>
+<li><strong>32/</strong>
+<ul>
+<li><a href=".git/objects/32/040b677c87da2e488ceffae96115800fdc8e2a">040b677c87da2e488ceffae96115800fdc8e2a</a></li>
+</ul>
+</li>
+<li><strong>9c/</strong>
+<ul>
+<li><a href=".git/objects/9c/ce609b057a43c7c741cf591da51c524db26a34">ce609b057a43c7c741cf591da51c524db26a34</a></li>
+</ul>
+</li>
+<li><strong>d0/</strong>
+<ul>
+<li><a href=".git/objects/d0/0d7a8bf1131a3947cbbdafa859555d03dc293f">0d7a8bf1131a3947cbbdafa859555d03dc293f</a></li>
+</ul>
+</li>
+<li><strong>df/</strong>
+<ul>
+<li><a href=".git/objects/df/8c6704a8e86415b90610337d0956ccbc9ae90e">8c6704a8e86415b90610337d0956ccbc9ae90e</a></li>
+</ul>
+</li>
+<li><strong>d1/</strong>
+<ul>
+<li><a href=".git/objects/d1/01af1d0514df543fda0fe6fddfb1875556ee2b">01af1d0514df543fda0fe6fddfb1875556ee2b</a></li>
+</ul>
+</li>
+<li><strong>c7/</strong>
+<ul>
+<li><a href=".git/objects/c7/cda9c08b802227c3af27e16f76d6428b8a7981">cda9c08b802227c3af27e16f76d6428b8a7981</a></li>
+</ul>
+</li>
+<li><strong>ca/</strong>
+<ul>
+<li><a href=".git/objects/ca/e7fe3d37dd03fda84c127f4cf7cdb7057ce499">e7fe3d37dd03fda84c127f4cf7cdb7057ce499</a></li>
+</ul>
+</li>
+<li><strong>fe/</strong>
+<ul>
+<li><a href=".git/objects/fe/5ba2c66881d2cb16a8308630bee27b57705bd4">5ba2c66881d2cb16a8308630bee27b57705bd4</a></li>
+</ul>
+</li>
+<li><strong>ec/</strong>
+<ul>
+<li><a href=".git/objects/ec/e189aa265b4c954366d3b8219f8b63824271a3">e189aa265b4c954366d3b8219f8b63824271a3</a></li>
+</ul>
+</li>
+<li><strong>27/</strong>
+<ul>
+<li><a href=".git/objects/27/c90f8f5385cfe0b9114d28b8de51fcf41e16f0">c90f8f5385cfe0b9114d28b8de51fcf41e16f0</a></li>
+</ul>
+</li>
+<li><strong>pack/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>11/</strong>
+<ul>
+<li><a href=".git/objects/11/63a26f4054b2c983c86e2701ffeb1fb49aa21c">63a26f4054b2c983c86e2701ffeb1fb49aa21c</a></li>
+</ul>
+</li>
+<li><strong>89/</strong>
+<ul>
+<li><a href=".git/objects/89/78b296ca241f56bdef97f9b03fda3d2593d42b">78b296ca241f56bdef97f9b03fda3d2593d42b</a></li>
+<li><a href=".git/objects/89/d041ed27b431a4395f5caf07c5d50e74fa40d7">d041ed27b431a4395f5caf07c5d50e74fa40d7</a></li>
+<li><a href=".git/objects/89/7924581a2941f885bf1954063f3fa3cb14177f">7924581a2941f885bf1954063f3fa3cb14177f</a></li>
+</ul>
+</li>
+<li><strong>7b/</strong>
+<ul>
+<li><a href=".git/objects/7b/c2a96e7b93ff42c1a33586bd3751c1dfaaf3c3">c2a96e7b93ff42c1a33586bd3751c1dfaaf3c3</a></li>
+</ul>
+</li>
+<li><strong>26/</strong>
+<ul>
+<li><a href=".git/objects/26/657214d5d7c3cbca328ef3276990c326c8039e">657214d5d7c3cbca328ef3276990c326c8039e</a></li>
+</ul>
+</li>
+<li><strong>75/</strong>
+<ul>
+<li><a href=".git/objects/75/0bf21e7e327dd2421025407dd20c24f3aac415">0bf21e7e327dd2421025407dd20c24f3aac415</a></li>
+</ul>
+</li>
+<li><strong>36/</strong>
+<ul>
+<li><a href=".git/objects/36/6f9d6fc8c45e4a31d1a67151b46d659c10c363">6f9d6fc8c45e4a31d1a67151b46d659c10c363</a></li>
+</ul>
+</li>
+<li><strong>info/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>5b/</strong>
+<ul>
+<li><a href=".git/objects/5b/dc69220252011ef822de64f7be9462eac5cb59">dc69220252011ef822de64f7be9462eac5cb59</a></li>
+</ul>
+</li>
+<li><strong>37/</strong>
+<ul>
+<li><a href=".git/objects/37/1f28c10a63907746f9006b9e77453dac36987b">1f28c10a63907746f9006b9e77453dac36987b</a></li>
+</ul>
+</li>
+<li><strong>d4/</strong>
+<ul>
+<li><a href=".git/objects/d4/a4374edca0d961c4172ff7831b3b6c90e76f70">a4374edca0d961c4172ff7831b3b6c90e76f70</a></li>
+</ul>
+</li>
+<li><strong>d5/</strong>
+<ul>
+<li><a href=".git/objects/d5/8e4d9a7ab9154ab578ba7dd937a7565d084691">8e4d9a7ab9154ab578ba7dd937a7565d084691</a></li>
+</ul>
+</li>
+<li><strong>af/</strong>
+<ul>
+<li><a href=".git/objects/af/0d12a6755dad7d14822ca463bc5ed4de13f61b">0d12a6755dad7d14822ca463bc5ed4de13f61b</a></li>
+</ul>
+</li>
+<li><strong>c3/</strong>
+<ul>
+<li><a href=".git/objects/c3/a2e133544e7300ee0f9f397a491608226f65b6">a2e133544e7300ee0f9f397a491608226f65b6</a></li>
+</ul>
+</li>
+<li><strong>e6/</strong>
+<ul>
+<li><a href=".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391">9de29bb2d1d6434b8b29ae775ad8c2e48c5391</a></li>
+</ul>
+</li>
+<li><strong>fa/</strong>
+<ul>
+<li><a href=".git/objects/fa/201678b26697c12d7c8bf2122a4482b8737e24">201678b26697c12d7c8bf2122a4482b8737e24</a></li>
+</ul>
+</li>
+<li><strong>40/</strong>
+<ul>
+<li><a href=".git/objects/40/ed79896c3583497a6a89dcd518e67a41c0b74a">ed79896c3583497a6a89dcd518e67a41c0b74a</a></li>
+</ul>
+</li>
+<li><strong>14/</strong>
+<ul>
+<li><a href=".git/objects/14/c7e3f727945b88cad8d8f38d27b9362590172a">c7e3f727945b88cad8d8f38d27b9362590172a</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=".git/HEAD">HEAD</a></li>
+<li><strong>info/</strong>
+<ul>
+<li><a href=".git/info/exclude">exclude</a></li>
+</ul>
+</li>
+<li><strong>logs/</strong>
+<ul>
+<li><a href=".git/logs/HEAD">HEAD</a></li>
+<li><strong>refs/</strong>
+<ul>
+<li><strong>heads/</strong>
+<ul>
+<li><a href=".git/logs/refs/heads/main">main</a></li>
+</ul>
+</li>
+<li><strong>remotes/</strong>
+<ul>
+<li><strong>origin/</strong>
+<ul>
+<li><a href=".git/logs/refs/remotes/origin/main">main</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=".git/description">description</a></li>
+<li><strong>hooks/</strong>
+<ul>
+<li><a href=".git/hooks/commit-msg.sample">commit-msg.sample</a></li>
+<li><a href=".git/hooks/pre-rebase.sample">pre-rebase.sample</a></li>
+<li><a href=".git/hooks/pre-commit.sample">pre-commit.sample</a></li>
+<li><a href=".git/hooks/applypatch-msg.sample">applypatch-msg.sample</a></li>
+<li><a href=".git/hooks/fsmonitor-watchman.sample">fsmonitor-watchman.sample</a></li>
+<li><a href=".git/hooks/pre-receive.sample">pre-receive.sample</a></li>
+<li><a href=".git/hooks/prepare-commit-msg.sample">prepare-commit-msg.sample</a></li>
+<li><a href=".git/hooks/post-update.sample">post-update.sample</a></li>
+<li><a href=".git/hooks/pre-merge-commit.sample">pre-merge-commit.sample</a></li>
+<li><a href=".git/hooks/pre-applypatch.sample">pre-applypatch.sample</a></li>
+<li><a href=".git/hooks/pre-push.sample">pre-push.sample</a></li>
+<li><a href=".git/hooks/update.sample">update.sample</a></li>
+<li><a href=".git/hooks/push-to-checkout.sample">push-to-checkout.sample</a></li>
+</ul>
+</li>
+<li><strong>refs/</strong>
+<ul>
+<li><strong>heads/</strong>
+<ul>
+<li><a href=".git/refs/heads/main">main</a></li>
+</ul>
+</li>
+<li><strong>tags/</strong>
+<ul>
+</ul>
+</li>
+<li><strong>remotes/</strong>
+<ul>
+<li><strong>origin/</strong>
+<ul>
+<li><a href=".git/refs/remotes/origin/main">main</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=".git/index">index</a></li>
+<li><a href=".git/COMMIT_EDITMSG">COMMIT_EDITMSG</a></li>
+</ul>
+</li>
+<li><a href="main.py">main.py</a></li>
+</ul>
+
+</nav>
+<main>
 <h1>folder1</h1>
 <ul>
 <li><a href="heat_temperature_scatter_HAS.html">heat_temperature_scatter_HAS.html</a></li>
@@ -13,6 +562,12 @@
 <li><a href="heat_temperature_scatter_FIT.html">heat_temperature_scatter_FIT.html</a></li>
 <li><a href="heat_temperature_scatter_HOG.html">heat_temperature_scatter_HOG.html</a></li>
 <li><a href="heat_temperature_scatter_ALV.html">heat_temperature_scatter_ALV.html</a></li>
+
 </ul>
+</main>
+</body>
+</html>
+
+</main>
 </body>
 </html>

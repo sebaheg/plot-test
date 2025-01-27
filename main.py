@@ -1,44 +1,82 @@
 import os
 
 # Specify folders to include
-included_folders = ["folder1", "folder2"]
+included_folders = ["folder1", "folder2", "folder3"]
 
-# Function to generate index.html for a folder
-def generate_folder_html(folder):
-    files = os.listdir(folder)
-    html_content = f"<html>\n<head>\n<title>{folder}</title>\n</head>\n<body>\n<h1>{folder}</h1>\n<ul>\n"
+# Function to generate folder tree structure as HTML
+def generate_nav(folder, base_path=""):
+    html = "<ul>\n"
+    for item in os.listdir(folder):
+        item_path = os.path.join(folder, item)
+        relative_path = os.path.join(base_path, item)
+        if os.path.isdir(item_path):
+            html += f'<li><strong>{item}/</strong>\n'
+            html += generate_nav(item_path, relative_path)  # Recursive call for subfolders
+            html += "</li>\n"
+        elif item.endswith(".html"):  # Include only HTML files
+            html += f'<li><a href="{relative_path}">{item}</a></li>\n'
+    html += "</ul>\n"
+    return html
+
+# Function to add a navigation bar to an HTML file
+def add_navbar_to_html(file_path, nav_html):
+    with open(file_path, "r") as f:
+        original_content = f.read()
     
-    for file in files:
-        file_path = os.path.join(folder, file)
-        if os.path.isfile(file_path):  # Only include files
-            html_content += f'<li><a href="{file}">{file}</a></li>\n'
-    
-    html_content += "</ul>\n</body>\n</html>"
-    
-    # Write the index.html for the folder
-    with open(os.path.join(folder, "index.html"), "w") as f:
+    # Insert the navigation bar
+    html_content = f"""
+<html>
+<head>
+<title>Navigation</title>
+<style>
+  body {{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }}
+  nav {{
+    width: 250px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    overflow-y: auto;
+  }}
+  main {{
+    flex-grow: 1;
+    padding: 20px;
+  }}
+  a {{
+    text-decoration: none;
+    color: #0073e6;
+  }}
+  a:hover {{
+    text-decoration: underline;
+  }}
+</style>
+</head>
+<body>
+<nav>
+<h3>Navigation</h3>
+{nav_html}
+</nav>
+<main>
+{original_content}
+</main>
+</body>
+</html>
+"""
+    with open(file_path, "w") as f:
         f.write(html_content)
 
-# Generate root index.html
-def generate_root_html(folders):
-    html_content = "<html>\n<head>\n<title>Root Directory</title>\n</head>\n<body>\n<h1>Welcome</h1>\n<ul>\n"
-    
-    for folder in folders:
-        if os.path.exists(folder):
-            html_content += f'<li><a href="{folder}/index.html">{folder}</a></li>\n'
-    
-    html_content += "</ul>\n</body>\n</html>"
-    
-    # Write the root index.html
-    with open("index.html", "w") as f:
-        f.write(html_content)
+# Generate the folder tree HTML
+nav_html = generate_nav(".", "")
 
-# Generate index.html for each folder
+# Add the navigation bar to all HTML files
 for folder in included_folders:
-    if os.path.exists(folder):
-        generate_folder_html(folder)
-    else:
-        print(f"Folder {folder} does not exist.")
-
-# Generate the root index.html
-generate_root_html(included_folders)
+    for root, _, files in os.walk(folder):
+        for file in files:
+            if file.endswith(".html"):
+                file_path = os.path.join(root, file)
+                add_navbar_to_html(file_path, nav_html)
